@@ -21,7 +21,7 @@ int main()
 	y.addBehaviour<Foto>();
 	y.addBehaviour<Music>();
 	Actor& player = game.makeActor();
-	player.addBehaviour<Life>().life = 10.0;
+	player.addBehaviour<Life>(10.0);
 	player.addBehaviour<Control>();
 	player.addBehaviour<Body>();
 	player.addBehaviour<Sound>();
@@ -33,7 +33,7 @@ int main()
 		Actor& a = game.makeActor();
 		a.addBehaviour<Body>();
 		a.addBehaviour<Circle>().getCircle().setFillColor(sf::Color(150, 158, 176));
-		a.addBehaviour<Life>().life = 5.0;
+		a.addBehaviour<Life>(5.0);
 		a.transform.x = 55*i+50;
 		a.transform.y = 300.0;
 	}

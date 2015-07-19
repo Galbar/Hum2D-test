@@ -6,9 +6,9 @@ using namespace h2d;
 class Life : public Behaviour
 {
 public:
-	Life():
+	Life(double l = 100.0):
 	Behaviour(),
-	life(100.0),
+	life(l),
 	alive(true){}
 	~Life(){}
 
