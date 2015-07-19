@@ -1,0 +1,8 @@
+[submodule "SFML"]
+	path = SFML
+	url = https://github.com/Galbar/Hummingbird2D-SFML.git
+	branch = master
+[submodule "Hum2D"]
+	path = Hum2D
+	url = https://github.com/Galbar/Hummingbird2D.git
+	branch = master
